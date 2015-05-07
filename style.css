@@ -1,5 +1,5 @@
 .leaving-popup:after{
-	content: "By clicking this link, you will be leaving navigating off this site." !important;
+	content: "By clicking this link, you will be navigating away from this site." !important;
 	color: #444;
 	z-index: 10;
 	position: absolute;
