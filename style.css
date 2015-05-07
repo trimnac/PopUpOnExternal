@@ -1,0 +1,56 @@
+.leaving-popup:after{
+	content: "By clicking this link, you will be leaving navigating off this site." !important;
+	color: #444;
+	z-index: 10;
+	position: absolute;
+	width: 405px;
+	font-size: 12px;
+	line-height: 15px;
+	background-color: #eaeaea;
+	padding: 5px 10px;
+	right: -20px;
+	top: 50px;
+	opacity: 1;
+	white-space: normal;
+	border-radius: 2px;
+	box-shadow: 2px 2px 3px 0 rgba(178, 178, 178, .4);
+	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
+}
+.leaving-popup:before{
+	background-color: #eaeaea;
+	content: "\00a0";
+	display: block;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	right: 30px;
+	top: 42px;
+	z-index: 10;
+	transform: rotate(47deg) skew(5deg);
+	-moz-transform: rotate(47deg) skew(5deg);
+	-ms-transform: rotate(47deg) skew(5deg);
+	-o-transform: rotate(47deg) skew(5deg);
+	-webkit-transform: rotate(47deg) skew(5deg);
+	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
+}
+.leaving-popup.leftside:after{
+	right: -240px;
+}
+.leaving-popup.leftside:before{
+	right: 80px;
+}
+.leaving-popup.bottomhalf:after{
+	top: -105px;
+	box-shadow: 2px -2px 3px 0 rgba(178, 178, 178, .4);
+}
+.leaving-popup.bottomhalf:before{
+	top: -28px;
+}
